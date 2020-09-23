@@ -1,0 +1,26 @@
+.menu-header {
+    height: 30vh;
+    text-align: center;
+    
+    h1 {
+        margin-top: 5rem;
+    }
+}
+
+.menu-main {
+    padding: 2rem 5rem;
+    text-align: center;
+
+    button {
+        width: 100%;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: .5rem;
+        border-radius: 10px;
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}

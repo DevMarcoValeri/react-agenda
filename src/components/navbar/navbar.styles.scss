@@ -1,0 +1,19 @@
+nav {
+    position: relative;
+    padding: .5rem;
+
+    ul {
+        position: absolute;
+        right: 0%;
+
+        li {
+            display: inline;
+            padding: .6rem;
+            
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+}

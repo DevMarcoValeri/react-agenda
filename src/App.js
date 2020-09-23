@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+import { 
+  BrowserRouter as Router,
+  Route,
+  Switch
+ } from 'react-router-dom';
+
+// Import pages
+import HomePage from './pages/homepage/homepage.component';
+import Menu from './pages/menu/menu.component';
+import Agenda from './pages/agenda/agenda.component';
+
+// Import css file
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <Router>
+        <Switch>
+          <Route path="/" component={HomePage} exact />
+          <Route path="/menu" component={Menu} />
+          <Route path="/agenda" component={Agenda} />
+        </Switch>
+      </Router>
+    )
+  }
 }
 
 export default App;
